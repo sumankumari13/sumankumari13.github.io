@@ -616,36 +616,46 @@ body:not(.user-is-tabbing) a:focus {
     margin-top: 20px;
   }
 
-
-  .skills-table {
+.skills-table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 16px;
-  }
+    font-size: 1.6rem;
+    color: var(--white-1);
+}
 
-  .skills-table th,
-  .skills-table td {
-    padding: 12px 16px;
-    border-bottom: 1px solid #ccc;
+.skills-table th,
+.skills-table td {
+    padding: 1.2rem 1.6rem;
+    border-bottom: 1px solid var(--white-1);
     text-align: left;
-  }
+}
 
-  .skills-table thead {
-    background-color: #f5f5f5;
-  }
+.skills-table thead {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    color: var(--white-1);
+}
 
-  .skills-table tr:hover {
-    background-color: #fafafa;
-  }
+.skills-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
 
-  .table-wrapper {
+.table-wrapper {
     overflow-x: auto;
-    margin-top: 20px;
-  }
+    margin-top: 2rem;
+    border: 1px solid var(--white-1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+h2 {
+    font-size: var(--font-size-medium-1);
+    margin-bottom: var(--gutter-small);
+    color: var(--pink);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
 
