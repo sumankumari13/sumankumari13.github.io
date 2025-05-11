@@ -564,9 +564,9 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo {
-  height: 10px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensures the image scales properly without distortion */
-  width: auto; /* Maintain the aspect ratio */
+    height: 5px; /* Reduced the height to make the photo smaller */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    width: auto; /* Maintain the aspect ratio */
 }
 /* --------------------------------------- */
 /* ----- Contact ----- */
