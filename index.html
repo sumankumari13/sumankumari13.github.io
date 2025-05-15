@@ -25,14 +25,39 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+          <li class="nav__item"></li>
+            <a href="#about" class="nav__link" tabindex="0">About</a>
           </li>
-          <li class="nav__item"><a href="#work" class="nav__link">Skills and Certification</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+          <li class="nav__item"></li>
+            <a href="#work" class="nav__link" tabindex="0">Skills & Certifications</a>
+          </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#clients" class="nav__link" tabindex="0">Certifications & Achievements</a>
           </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" tabindex="0">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="#top" class="nav__link" tabindex="0">Top</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+      // Smooth scroll for anchor links
+      document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href.startsWith('#')) {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+      });
+    </script>
         </ul>
       </nav>
     </div>
@@ -165,25 +190,25 @@
 
     <section class="client" id="clients">
       <div class="row">
-        <h2>Certifications</h2>
+        <h2>Certifications and Achievements</h2>
         <div class="client__logos">
-            <a href="https://example.com/company2" target="_blank">
-            <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+            <a href="https://drive.google.com/file/d/1jn5rNtZtf85xWkjVlnesuzSjobqSAShV/view?usp=sharing" target="_blank">
+            <img src="./images/aws.png" class="client__logo" alt="Company 2" />
             </a>
-            <a href="https://example.com/company3" target="_blank">
-            <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+            <a href="https://drive.google.com/file/d/1qlSj2XDjsvhR9YdcBoSaKi4z0ce9y8zC/view?usp=sharing" target="_blank">
+            <img src="./images/azure.jpeg" class="client__logo" alt="Company 3" />
             </a>
-            <a href="https://example.com/company1" target="_blank">
-            <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+            <a href="https://drive.google.com/file/d/1k4wTS-dNn4JL_w5w6pwi0BD5uu1nyvpX/view?usp=drive_link" target="_blank">
+            <img src="./images/award.jpeg" class="client__logo" alt="Company 1" />
             </a>
-            <a href="https://example.com/company1" target="_blank">
-            <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+            <a href="https://drive.google.com/file/d/1WKAQJ52jelxCJlkA2hKgZktmlu9AyYAM/view?usp=drive_link" target="_blank">
+            <img src="./images/award.jpeg" class="client__logo" alt="Company 1" />
             </a>
-            <a href="https://example.com/company3" target="_blank">
-            <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+            <a href="https://drive.google.com/file/d/1uQPam1p56WBQH4RsIeR7IkM74D8iBRuT/view?usp=drive_link" target="_blank">
+            <img src="./images/award.jpeg" class="client__logo" alt="Company 3" />
             </a>
-            <a href="https://example.com/company1" target="_blank">
-            <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+            <a href="https://drive.google.com/file/d/1BFhS0Z5MbcyoyRIBHpF13-c-cJm4_ajG/view?usp=drive_link" target="_blank">
+            <img src="./images/award.jpeg" class="client__logo" alt="Company 1" />
             </a>
         </div>
       </div>
@@ -206,6 +231,7 @@
         </p>
         <!-- Replace the email with yours -->
         <a href="mailto:sumankumari70004@gmail.com" class="btn">sumankumari@gmail.com</a>
+        <a href="https://www.linkedin.com/in/suman-kumari-b9b9701b2/" class="btn" target="_blank" style="margin-left: 10px;">LinkedIn</a>
       </div>
     </div>
   </section>
