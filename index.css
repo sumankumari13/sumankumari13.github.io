@@ -518,6 +518,8 @@ body:not(.user-is-tabbing) a:focus {
 .client__logo {
     height: 6.5rem;
     max-width: 18rem;
+    /* Make sure there is no filter or grayscale applied */
+    filter: none;
 }
 
 @media(max-width: 1240px) {
